@@ -1,3 +1,3 @@
 #!/bin/bash
-export FLASK_APP=jump_height.py
+export FLASK_APP=app.py
 flask run --host=0.0.0.0 --port=$PORT
