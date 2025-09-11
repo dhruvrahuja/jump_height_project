@@ -15,7 +15,7 @@ Jinja2==3.1.6
 kiwisolver==1.4.9
 MarkupSafe==3.0.2
 matplotlib==3.10.6
-mediapipe==0.10.0
+mediapipe==0.10.7
 ml_dtypes==0.5.3
 numpy==1.26.4
 opencv-contrib-python==4.11.0.86
@@ -23,7 +23,7 @@ opencv-python==4.5.5.64
 opt_einsum==3.4.0
 packaging==25.0
 pillow==11.3.0
-protobuf==4.25.8
+protobuf>=3.11,<4
 pycparser==2.23
 pyparsing==3.2.3
 python-dateutil==2.9.0.post0
