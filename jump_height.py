@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS  
 import os
 import tempfile
 import argparse
@@ -7,7 +8,7 @@ import numpy as np
 import mediapipe as mp
 from scipy.signal import find_peaks
 
-# ------------------- Helper Functions (same as before) -------------------
+# ------------------- Helper Functions -------------------
 def lowpass(sig, alpha=0.2):
     if len(sig) == 0: return sig
     y = [sig[0]]
@@ -130,6 +131,7 @@ def detect_jumps(video_path, real_height_m):
 
 # ------------------- Flask App -------------------
 app = Flask(__name__)
+CORS(app)  
 
 @app.route('/jump', methods=['POST'])
 def jump():
