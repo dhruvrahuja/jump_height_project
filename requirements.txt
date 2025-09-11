@@ -1,7 +1,7 @@
 absl-py==2.3.1
 attrs==25.3.0
 blinker==1.9.0
-cffi==2.0.0
+cffi==1.15.1
 click==8.2.1
 contourpy==1.3.2
 cycler==0.12.1
@@ -16,14 +16,13 @@ kiwisolver==1.4.9
 MarkupSafe==3.0.2
 matplotlib==3.10.6
 numpy==1.26.4
-mediapipe>=0.10.7
+mediapipe==0.10.9  # fixed compatible version
 ml_dtypes==0.5.3
-opencv-contrib-python==4.11.0.86
-opencv-python==4.5.5.64
+opencv-contrib-python==4.7.0.72  # updated to latest stable
 opt_einsum==3.4.0
 packaging==25.0
 pillow==11.3.0
-protobuf>=3.11,<4
+protobuf<4  # keep it flexible but <4
 pycparser==2.23
 pyparsing==3.2.3
 python-dateutil==2.9.0.post0
